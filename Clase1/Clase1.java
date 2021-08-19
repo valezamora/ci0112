@@ -14,7 +14,6 @@ public class Clase1 {
         saludo = "Hola grupo 9 progra I. ";
         System.out.print(saludo);
         System.out.println("Esta es la primera clase");
-
-        System.out.println();
+        
     }
 }
