@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NutricionistaApp
+comment0.text=\n\ Clase\ que\ contiene\ la\ l\u00F3gica\ de\ la\ aplicacion\ de\ nutricionistas\n\n\ @author\ Valeria\ Zamora\n\ @version\ 9/9/2021\ \n
+comment1.params=
+comment1.target=NutricionistaApp()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ NutricionistaApp\n
+comment2.params=
+comment2.target=void\ run()
+comment2.text=\n\ Metodo\ que\ contiene\ la\ logica\ para\ correr\ la\ aplicaci\u00F3n\n
+numComments=3

@@ -1,0 +1,36 @@
+Class documentation
+<---- javadoc command: ---->
+/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/JDK/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+11
+-classpath
+/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-console-standalone-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-quickcheck-core-0.9.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-jupiter-migrationsupport-5.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-runner-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-jupiter-params-5.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-testkit-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-jupiter-api-5.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-console-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-jupiter-engine-5.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-suite-api-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-vintage-engine-5.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-reporting-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-jupiter-5.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-engine-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-launcher-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/junit-platform-commons-1.5.2.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/hamcrest-core-1.3.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/hamcrest-library-1.3.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/lang-stride.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.base.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.controls.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.fxml.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.graphics.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.media.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.properties.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.swing.jar:/private/var/folders/0w/wk8gty3n2gb4zwj1pgqdwgm80000gn/T/AppTranslocation/A60EADB6-3999-43F3-802D-098C854BEF4B/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.web.jar:/Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8
+-d
+/Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+/Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/Nutricionista.java
+<---- end of javadoc command ---->
+Loading source file /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/Nutricionista.java...
+Constructing Javadoc information...
+Standard Doclet version 11.0.10
+Building tree for all the packages and classes...
+Generating /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc/Nutricionista.html...
+Generating /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc/package-summary.html...
+Generating /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc/allclasses.html...
+Generating /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc/allclasses.html...
+Generating /Users/valeriazamora/Documents/Progra I/Ejemplos/ci0112/Clase8/doc/index.html...

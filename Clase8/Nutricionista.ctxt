@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Nutricionista
+comment0.text=\n\ La\ clase\ nutricionista\ puede\ calcular\ datos\ para\ un\ paciente.\n\n\ @author\ Valeria\ Zamora\n\ @version\ 9/9/2021\n
+comment1.params=pesoEnKg\ alturaEnCm\ edad\ factorDeActividad
+comment1.target=double\ calcularCaloriasAConsumir(double,\ double,\ int,\ double)
+comment1.text=\n\ Calcula\ las\ calorias\ a\ consumir\ por\ una\ persona\ en\ un\ d\u00EDa\ usando\ la\ formula\n\ Calorias\ \=\ [655\ +\ (9,6\ \u00D7\ peso\ en\ kg)\ ]\ +\ [\ (1,8\ \u00D7\ altura\ en\ cm)\ \u2013\ (4,7\ \u00D7\ edad)]\ \u00D7\ Factor\ actividad.\n\ \n\ @param\ \ pesoEnKg\ \ Peso\ de\ la\ persona\ en\ kilogramos\n\ @param\ \ alturaEnCm\ \ Altura\ de\ la\ persona\ en\ cm\n\ @param\ \ edad\ \ Edad\ de\ la\ persona\ (a\u00F1os)\n\ @param\ \ factorDeActividad\ \ \ \ Factor\ de\ actividad\ de\ la\ persona\ (1.2\ para\ personas\ sedentarias\ y\ 1.55\ para\ personas\ con\ actividad\ moderada)\n\n\ @return\ \ Cantidad\ de\ calor\u00EDas\ de\ debe\ consumir\ la\ persona\ en\ un\ d\u00EDa\n
+comment2.params=pesoEnKg\ alturaEnCm
+comment2.target=double\ calcularImc(double,\ double)
+comment2.text=\n\ Calcula\ el\ \u00CDndice\ de\ Masa\ Corporal\ (IMC)\ de\ una\ persona\n\ \n\ @param\ \ \ pesoEnKg\ \ \ \ Peso\ en\ kilogramos\ de\ la\ persona\n\ @param\ \ \ alturaEnCm\ \ Altura\ en\ cm\ de\ la\ persona\n\ \n\ @return\ \ El\ \u00EDndice\ de\ masa\ corporal\ de\ la\ persona\n
+numComments=3

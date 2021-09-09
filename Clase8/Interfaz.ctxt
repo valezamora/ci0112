@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Interfaz
+comment0.text=\n\ Clase\ para\ manejar\ la\ entrada\ y\ salida\ de\ datos\ en\ la\ consola\ o\ GUI.\ \n\ Esta\ clase\ no\ es\ necesaria,\ es\ solo\ para\ demostrar\ que\ se\ puede\ permitir\ que\ el\ usuario\ elija\ cualquiera\n\n\ @author\ Valeria\ Zamora\n\ @version\ 9/9/2021\n
+comment1.params=
+comment1.target=Interfaz()
+comment2.params=usarConsola
+comment2.target=void\ setUsarConsola(boolean)
+comment3.params=mensaje
+comment3.target=java.lang.String\ leerString(java.lang.String)
+comment3.text=\n\ Lee\ un\ string\ del\ usuario\n\ @param\ \ \ mensaje\ Mensaje\ que\ se\ despliega\ para\ solicitar\ string\n\ @return\ String\ ingresado\ por\ el\ usuario\n
+comment4.params=mensaje
+comment4.target=int\ leerEntero(java.lang.String)
+comment4.text=\n\ Lee\ un\ entero\ del\ usuario\n\ @param\ \ \ mensaje\ Mensaje\ que\ se\ despliega\ para\ solicitar\ entero\n\ @return\ \ Entero\ ingresado\ por\ el\ usuario\n
+comment5.params=mensaje
+comment5.target=double\ leerDouble(java.lang.String)
+comment5.text=\n\ Lee\ un\ double\ del\ usuario\n\ @param\ \ \ mensaje\ \ \ \ \ Mensaje\ que\ se\ despliega\ para\ solicitar\ double\n\ @return\ \ Double\ ingresado\ por\ el\ usuario\n
+comment6.params=titulo\ mensaje
+comment6.target=void\ mostrarMensaje(java.lang.String,\ java.lang.String)
+comment6.text=\n\ Muestra\ un\ mensaje\ al\ usuario\n\ @param\ \ \ titulo\ \ \ \ Titulo\ del\ mensaje\n\ @param\ \ \ mensaje\ \ \ Contenido\ del\ mensaje\n
+numComments=7
