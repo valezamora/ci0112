@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Calendario
+comment0.text=\n\ Write\ a\ description\ of\ class\ EjemploSwitch\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=mes
+comment1.target=java.lang.String\ obtenerNombreDeMes(int)
+comment1.text=\n\ EJEMPLO\ SWITCH\n\ Obtener\ el\ nombre\ del\ mes\ a\ partir\ de\ un\ entero\n\ si\ el\ numero\ es\ invalido\ devuelve\ "invalido"\n\n\ @param\ \ mes\ \ el\ numero\ del\ mes\n\ @return\ \ \ \ el\ mes\ en\ texto\n
+numComments=2

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=EjemploCiclos
+comment0.text=\n\ Write\ a\ description\ of\ class\ EjemploCiclos\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=veces\ texto
+comment1.target=java.lang.String\ concatenarString(int,\ java.lang.String)
+comment1.text=\n\ Recibe\ un\ texto\ y\ lo\ concatena\ n\ veces\ separado\ por\ una\ coma\n
+comment2.params=veces\ texto
+comment2.target=java.lang.String\ concatenarStringUsandoFor(int,\ java.lang.String)
+comment2.text=\n\ USANDO\ FOR\n\ Recibe\ un\ texto\ y\ lo\ concatena\ n\ veces\ separado\ por\ una\ coma\n
+numComments=3
