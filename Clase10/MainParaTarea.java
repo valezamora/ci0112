@@ -15,10 +15,10 @@ public class MainParaTarea
         int numeroTerminos = entrada.nextInt();
         System.out.println();
         
-        double pi = calculadora.calcularAproximacionDePi(numeroTerminos);
+        double pi = calculadora.aproxPi(numeroTerminos);
         System.out.println("El resultado de la aproximacion de Pi usando ciclos es: " + pi); 
 
-        double piRecursivo = calculadora.calcularAproximacionDePiRecursivo(numeroTerminos);   
+        double piRecursivo = calculadora.aproxPiRecursiva(numeroTerminos);   
         System.out.println("El resultado de la aproximacion de Pi usando recursividad es: " + piRecursivo); 
     }
 }
