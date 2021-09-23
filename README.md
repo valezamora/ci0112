@@ -19,3 +19,9 @@ Clase 6: Operadores lógicos, if-else, switch
 Clase 7: Ejemplo Televisor y ConvertirUnidades (implementado por compañeros)
 
 Clase 8: Aplicación con capas  - ejemplo Applicación Nutricionista
+
+Clase 9: Ciclos y Switch - Aplicación calendario
+
+Clase 10: Recursividad y ciclos
+
+Clase 11: Recursividad y validación de entrada de datos
