@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Tienda
+comment0.text=\n\ Clase\ tienda\n\n
+comment1.params=cantidadDeProductos
+comment1.target=Tienda(int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Tienda\n
+comment2.params=posicionDelProducto\ producto
+comment2.target=void\ agregarProducto(int,\ Producto)
+comment2.text=\n\ Agregar\ un\ producto\n\n\ @param\ \ \ posicionDelProducto\ \ posicion\ del\ vector\ donde\ se\ quiere\ guardar\ el\ producto\n\ @param\ \ \ producto\ \ \ \ producto\ que\ se\ va\ a\ guardar\n
+comment3.params=
+comment3.target=void\ ordenarProductosPorPrecio()
+comment3.text=\n\ Ordena\ el\ vector\ por\ precio\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
