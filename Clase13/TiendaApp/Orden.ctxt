@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Orden
+comment0.text=\n\ Clase\ Orden\n\n
+comment1.params=id\ cantidadDeProductos
+comment1.target=Orden(int,\ int)
+comment2.params=posicionDeProducto\ producto
+comment2.target=void\ agregarProducto(int,\ Producto)
+comment3.params=
+comment3.target=double\ calcularPrecioTotal()
+comment3.text=\n\ Sumar\ el\ precio\ de\ todos\ los\ productos\ de\ una\ orden\n\ \n\ @return\ precio\ total\ de\ la\ orden\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

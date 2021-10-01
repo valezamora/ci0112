@@ -8,7 +8,6 @@
 public class MainTienda
 {
     public static void main(String[] args) {
-        System.out.println(args[0]);
         TiendaApp app = new TiendaApp();
         app.run();
     }
