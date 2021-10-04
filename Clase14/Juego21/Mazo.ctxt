@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Mazo
+comment1.params=
+comment1.target=Mazo()
+comment2.params=
+comment2.target=void\ inicializarCartas()
+comment3.params=
+comment3.target=void\ barajarCartas()
+comment4.params=
+comment4.target=Carta\ sacarCarta()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

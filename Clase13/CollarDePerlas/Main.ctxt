@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\n\ Suponga\ que\ quiere\ romper\ el\ collar\ en\ alg\u00FAn\ momento,\n\ desplegarlo\ en\ una\ l\u00EDnea\ recta,\ luego\ comenzar\ a\ recolectar\ cuentas\ del\ mismo\ color\ desde\ un\ extremo\ hasta\ que\ encuentre\ una\ cuenta\ de\ un\ color\ diferente,\n\ haga\ lo\ mismo\ en\ el\ otro\ extremo\ (el\ color\ puede\ ser\ diferente\ al\ recogido\ anteriormente).\n\ Determine\ d\u00F3nde\ romper\ el\ collar\ para\ recolectar\ el\ n\u00FAmero\ m\u00E1ximo\ de\ perlas.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

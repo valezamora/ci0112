@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=InterfazConsola
+comment1.params=
+comment1.target=InterfazConsola()
+comment2.params=mensaje
+comment2.target=void\ mostrarMensaje(java.lang.String)
+comment2.text=\n\ Muestra\ un\ mensaje\ al\ usuario\n\ @param\ \ \ titulo\ \ \ \ Titulo\ del\ mensaje\n\ @param\ \ \ mensaje\ \ \ Contenido\ del\ mensaje\n
+comment3.params=mensaje
+comment3.target=boolean\ leerBooleano(java.lang.String)
+numComments=4

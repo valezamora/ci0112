@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Juego21
+comment0.text=\n\ Write\ a\ description\ of\ class\ Juego21\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Juego21()
+comment2.params=interfaz
+comment2.target=void\ jugarPartida(InterfazConsola)
+comment3.params=carta
+comment3.target=int\ obtenerValorCarta(Carta)
+comment4.params=interfaz
+comment4.target=int\ repartirCarta(InterfazConsola)
+numComments=5

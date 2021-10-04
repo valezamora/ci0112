@@ -30,6 +30,10 @@ public class Main
       System.out.println( "Para el collar <" + d + ">" );
       System.out.println( "El corte que da la secuencia más larga de perlas es en " + x[0] + " y tiene " + x[1] + " perlas" );
 
-      System.out.println( e );
+
+        x = e.puntoDeCorte();
+      System.out.println( "Para el collar <" + e + ">" );
+      System.out.println( "El corte que da la secuencia más larga de perlas es en " + x[0] + " y tiene " + x[1] + " perlas" );
+
    }
 }
