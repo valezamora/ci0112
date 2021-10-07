@@ -23,6 +23,7 @@ public class Racional{
      * denominador no puede ser igual a 0.
      **/
     public Racional(){
+        _init(0, 1);
     }
 
     /** 
@@ -31,6 +32,7 @@ public class Racional{
      * @param Racional Número Racional para crear uno con los mismos valores
      **/
     public Racional(Racional otro){
+        _init(otro.getNumerador(), otro.getDenominador());
     }
 
     /** 
@@ -38,6 +40,7 @@ public class Racional{
      * @param numerador Se usa para crear un Racional de la forma N/1
      **/
     public Racional(int numerador){
+        _init(numerador, 1);
     }
 
     /** 
@@ -46,6 +49,7 @@ public class Racional{
      * @param denominador este  denominador va ha se la parte de abajo de la fracción
      **/
     public Racional(int numerador,int denominador){
+        _init(numerador, denominador);
     }
 
     public int getNumerador(){
@@ -64,8 +68,11 @@ public class Racional{
      * @return Racional producto de la suma, ya simplificado
      **/
     public Racional mas(Racional otro){
-        // IMPLEMENTAR
-        return  null;
+        int numerador = (this.numerador*otro.denominador)+(this.denominador*otro.numerador);
+        int denominador = (this.denominador*otro.denominador);
+        Racional nuevoRacional = new Racional(numerador,denominador);
+        nuevoRacional.simplificar();
+        return nuevoRacional;
     }
 
     /**
@@ -75,8 +82,11 @@ public class Racional{
      * @return Racional producto de la resta, en su minima expresion ya simplificado
      **/
     public Racional menos(Racional otro){
-        // IMPLEMENTAR
-        return null;
+        int numerador = (this.numerador*otro.denominador)-(this.denominador*otro.numerador);
+        int denominador = (this.denominador*otro.denominador);
+        Racional nuevoRacional = new Racional(numerador,denominador);
+        nuevoRacional.simplificar();
+        return nuevoRacional;
     }
 
     /**
@@ -85,8 +95,11 @@ public class Racional{
      * @return Racional producto de la multiplicacion simplificado
      **/
     public Racional multiplicar(Racional otro){
-        // IMPLEMENTAR
-        return null;
+        int numerador = this.numerador*otro.numerador;
+        int denominador = this.denominador*otro.denominador;
+        Racional nuevoRacional = new Racional(numerador,denominador);
+        nuevoRacional.simplificar();
+        return nuevoRacional;
     }
 
     /**
@@ -95,11 +108,12 @@ public class Racional{
      * @return Racional producto de la division, debidamente simplificado
      **/
 
-    public Racional dividir(Racional otro){
+    public Racional dividir(Racional otro){        
         Racional nuevo=new Racional();
 
         nuevo.numerador=this.numerador*otro.denominador;
         nuevo.denominador=this.denominador*otro.numerador;
+        
         nuevo.simplificar();
         return nuevo;
     }
@@ -111,8 +125,13 @@ public class Racional{
      * @return salida la salida es un string con el formato solicitado
      **/
     public String toString(){
-        // IMPLEMENTAR
-        return "Formato: numerador/denominador si denominador!=0";
+        String texto = "";
+        if (denominador == 1) {
+            texto += numerador;
+        } else {
+            texto += numerador + "/" + denominador;
+        }
+        return texto;
     }
     
     // METODOS  PRIVADOS
@@ -124,10 +143,20 @@ public class Racional{
      * @return int máximo común divisor de los valores: x y
      * UN EJERCICIO INTERESANTE ESTÁ EN EN LIBRO Y ES PROGRAMAR ESTE
      * MÉTODO EN FORMA RECURSIVA
+     * 
+     * @author Antonio Badilla
      */
     private int maximoComunDivisor(int x, int y){
-        // IMPLEMENTAR
-        return 0;
+        int r = 0;
+        int a = (x >= y) ? x : y;
+        int b = (x < y) ? x : y; 
+        r = b; 
+        while(a % b != 0) { 
+            r = a % b; 
+            a = b;   
+            b = r;   
+        }     
+        return r; //r seria el maximo comun divisor 
     }
 
     /**
@@ -140,14 +169,23 @@ public class Racional{
      * controlar que el denominador nunca sea 0 al inicalizar un Racional.
      */
     private void _init(int numerador, int denominador){
-        // IMPLEMENTAR
+        this.numerador = numerador;
+        if (denominador == 0) {
+            this.denominador = 1;
+        } else {
+            this.denominador = denominador;
+        }
     }
     
     /**
      * Método privado para simplificar un Racional
      */
     private void simplificar(){
-        // IMPLEMENTAR
+        // Cual es el numero mayor que divide numerador y denominador
+        int mcd = maximoComunDivisor(numerador, denominador);
+        // Dividir numerador y denominador por mcd
+        this.numerador = this.numerador / mcd;
+        this.denominador = this.denominador / mcd;
     }
 
 }

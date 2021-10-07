@@ -15,8 +15,8 @@ public class Main
         Racional r2 = new Racional(15);
         
         // recibe numerador y denominador
-        Racional r3 = new Racional(5/7);
-        Racional r4 = new Racional(8/9);
+        Racional r3 = new Racional(5,7);
+        Racional r4 = new Racional(5,9);
         
         // recibe otro racional
         Racional r5 = new Racional(r3);
@@ -36,5 +36,6 @@ public class Main
         
         Racional r10 = r3.dividir(r4);
         System.out.println(r3 + " / " + r4 + " = " + r10);
+        
     }
 }
