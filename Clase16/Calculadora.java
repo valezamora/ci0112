@@ -38,6 +38,18 @@ public class Calculadora {
     
     public double pi02(long t){
        double aproximacionDePi = 0;
+       Punto punto = new Punto();
+       long puntosEnCuadrado = 1;
+       long puntosEnCirculo = 1;
+       
+       for(long i = 0; i< t; ++i){
+          punto = punto.saltar();
+          puntosEnCuadrado++;
+          if(punto.dentroCirculo()){
+            puntosEnCirculo++;  
+          }
+       }
+       aproximacionDePi = 4.0 * puntosEnCirculo / puntosEnCuadrado;
        return aproximacionDePi;
     }    
 }
