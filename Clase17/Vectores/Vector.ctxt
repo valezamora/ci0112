@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Vector
+comment1.params=vector
+comment1.target=Vector(int[])
+comment2.params=vector
+comment2.target=void\ setVector(int[])
+comment3.params=
+comment3.target=void\ ordenamientoSeleccion()
+comment4.params=valorAEncontrar
+comment4.target=int\ busquedaSecuencial(int)
+comment5.params=valorAEncontrar
+comment5.target=boolean\ busquedaBinaria(int)
+comment6.params=valorAEncontrar\ numeros
+comment6.target=boolean\ busquedaBinaria(int,\ int[])
+comment7.params=v
+comment7.target=java.lang.String\ getVectorString(int[])
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
