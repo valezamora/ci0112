@@ -20,11 +20,15 @@ public class Tablero
     }
     
     public Tablero(Tablero otroTablero) {
-        copiarMatriz(otroTablero.getMatriz());
+        copiarTablero(otroTablero);
     }
     
     public Ficha[][] getMatriz() {
         return matriz;
+    }
+    
+    public int[] getFilaVacia() {
+        return filaVacia;
     }
     
     /**
@@ -69,6 +73,16 @@ public class Tablero
         return esGanador;
     }
     
+    public boolean hayEspacioEnTablero() {
+        int columnasLlenas = 0;
+        for(int i = 0; i < filaVacia.length; ++i) {
+            if (filaVacia[i] < 0) {
+                columnasLlenas++;
+            }
+        }
+        return columnasLlenas == filaVacia.length ? false : true;
+    }
+    
     // IMPLEMENTAR
     public String toString() {
         return "";
@@ -81,14 +95,22 @@ public class Tablero
                 matriz[i][j] = new Ficha('-');
             }
         }
+        filaVacia = new int[columnas];
+        for(int i = 0; i < filaVacia.length; ++i) {
+            filaVacia[i] = filas-1;
+        }
     }
     
-    private void copiarMatriz(Ficha[][] otraMatriz) {
-        matriz = new Ficha[otraMatriz.length][otraMatriz[0].length];
+    private void copiarTablero(Tablero otroTablero) {
+        matriz = new Ficha[otroTablero.getMatriz().length][otroTablero.getMatriz()[0].length];
         for(int i = 0; i < matriz.length; ++i) {
             for(int j = 0; j < matriz[i].length; ++j) {
                 matriz[i][j] = new Ficha(matriz[i][j].getColor());
             }
+        }
+        filaVacia = new int[matriz[0].length];
+        for(int i = 0; i < filaVacia.length; ++i) {
+            filaVacia[i] = otroTablero.getFilaVacia()[i];
         }
     }
     

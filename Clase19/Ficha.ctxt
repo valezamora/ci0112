@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Ficha
+comment1.params=color
+comment1.target=Ficha(char)
+comment2.params=
+comment2.target=char\ getColor()
+comment3.params=otraFicha
+comment3.target=boolean\ equals(Ficha)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
