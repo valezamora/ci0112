@@ -33,21 +33,21 @@ public class Tablero
     
     /**
      * Poner una ficha en el tablero en la columna indicada
-     * @param columna La columna donde voy a poner la ficha
+     * @param columna La columna donde voy a poner la ficha (entre 0 y m-1)
      * @param ficha La Ficha que se va a guardar
      */
-    public void ponerFicha(int columna, Ficha ficha) {
-        // IMPLEMENTAR
-        
+    public void ponerFicha(int columna, Ficha ficha) {        
         // Poner la ficha en la columna y la ultima fila vacia
         // Es una columna valida?
-        
         // Cual es mi ultima fila?
         // Opcion 1: poner recorrer la columna y buscar la primera posicion donde haya una ficha, coloco la ficha en la fila anterior
         // Opcion 2: guardar en un vector la primera posicion disponible en cada columna
-        
         // Poner la ficha en la columna indicada
         
+        if (esColumnaValida(columna) && columaTieneEspacio(columna)) {
+            matriz[filaVacia[columna]][columna] = ficha;
+            filaVacia[columna]--; 
+        }
     }
     
     public boolean gano(Ficha ficha) {
@@ -112,6 +112,14 @@ public class Tablero
         for(int i = 0; i < filaVacia.length; ++i) {
             filaVacia[i] = otroTablero.getFilaVacia()[i];
         }
+    }
+    
+    private boolean esColumnaValida(int columna) {
+        return columna >= 0 && columna < matriz[0].length;
+    }
+    
+    private boolean columaTieneEspacio(int columna) {
+        return filaVacia[columna] >= 0;
     }
     
     /**

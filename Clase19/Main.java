@@ -20,9 +20,13 @@ public class Main
             // Pedir al usuario en que posicion quiere poner la ficha
             System.out.println("Ingrese la columna para el jugador " + jugador1);
             int posicionJugador1 = entrada.nextInt();
+            cuatroEnLinea.ponerFicha(posicionJugador1, jugador1);
+            
+            System.out.println("Tablero actual:");
+            System.out.println(cuatroEnLinea);
+            
             System.out.println("Ingrese la columna para el jugador " + jugador2);
             int posicionJugador2 = entrada.nextInt();
-            cuatroEnLinea.ponerFicha(posicionJugador1, jugador1);
             cuatroEnLinea.ponerFicha(posicionJugador2, jugador2);
             
             boolean ganoJugador1 = cuatroEnLinea.gano(jugador1);
