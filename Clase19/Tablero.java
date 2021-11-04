@@ -3,7 +3,7 @@ public class Tablero
     private Ficha matriz[][];
     private int filaVacia[];
     // 0=este , 1=sur-oeste, 2=sur, 3=sur-este 
-    private static final int SUMA_FILA[] = {0, 1, 1, 1,};
+    private static final int SUMA_FILA[] = {0, 1, 1, 1};
     private static final int SUMA_COLUMNA[] = {1, -1, 0, 1};
 
     /**
@@ -44,7 +44,7 @@ public class Tablero
         // Opcion 2: guardar en un vector la primera posicion disponible en cada columna
         // Poner la ficha en la columna indicada
         
-        if (esColumnaValida(columna) && columaTieneEspacio(columna)) {
+        if (esColumnaValida(columna) && columnaTieneEspacio(columna)) {
             matriz[filaVacia[columna]][columna] = ficha;
             filaVacia[columna]--; 
         }
@@ -60,7 +60,7 @@ public class Tablero
             for(int j = 0; !esGanador && j < matriz[i].length; ++j) {
                 // For para verificar todas las direcciones
                 for (int k = 0; (k < 4 && !esGanador); ++k) {
-                    int cantidadFichas = contarFichas(i, j, matriz[i][j], k);
+                    int cantidadFichas = contarCuatroFichas(i, j, ficha, k);
                     if (cantidadFichas >= 4) {
                         esGanador = true;
                     }
@@ -83,9 +83,15 @@ public class Tablero
         return columnasLlenas == filaVacia.length ? false : true;
     }
     
-    // IMPLEMENTAR
     public String toString() {
-        return "";
+        String r = "";
+        for(int i = 0; i < matriz.length; ++i) {
+            for(int j = 0; j < matriz[i].length; ++j) {
+                r += matriz[i][j] + "\t";
+            }
+            r += "\n";
+        }
+        return r;
     }
     
     private void _init(int filas, int columnas) {
@@ -118,18 +124,36 @@ public class Tablero
         return columna >= 0 && columna < matriz[0].length;
     }
     
-    private boolean columaTieneEspacio(int columna) {
+    private boolean columnaTieneEspacio(int columna) {
         return filaVacia[columna] >= 0;
+    }
+    
+    private boolean esCeldaValida(int fila, int columna) {
+        return fila >= 0 && fila < matriz.length && columna >= 0 && columna < matriz[fila].length;
     }
     
     /**
      * Saber la cantidad de fichas iguales seguidas que hay de un color hacia una direccion especifica
      */
-    private int contarFichas(int fila, int columna, Ficha ficha, int direccion) {
+    private int contarCuatroFichas(int fila, int columna, Ficha ficha, int direccion) {
         int contador = 0;
+        int f = fila;
+        int c = columna;
+        boolean esColor = true;
         
-        // IMPLEMENTAR
-        
+        for(int i=0; esColor && i<4; ++i) {
+            if (esCeldaValida(f, c)) {
+                if (matriz[f][c].equals(ficha)) {
+                    contador++;
+                } else {
+                    esColor = false;
+                }
+            }
+            // moverme hacia la direccion indicada en el parametro
+            f += SUMA_FILA[direccion];
+            c += SUMA_COLUMNA[direccion];
+        }
+
         return contador;
     }
 }

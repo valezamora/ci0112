@@ -35,6 +35,7 @@ public class Main
             if (ganoJugador1 || ganoJugador2) {
                 String s = ganoJugador1 ? "Gano Jugador 1: " + jugador1 : "Gano Jugador 2: " + jugador2;
                 System.out.println(s);
+                // Imprimo tablero usando el toString
                 System.out.println(cuatroEnLinea);
                 hayGanador = true;
             }
