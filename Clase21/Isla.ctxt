@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Isla
+comment1.params=
+comment1.target=Isla()
+comment2.params=filas\ columnas
+comment2.target=void\ init(int,\ int)
+comment3.params=direccion
+comment3.target=void\ moverPirata(int)
+comment4.params=
+comment4.target=boolean\ pista()
+comment5.params=
+comment5.target=boolean\ getPerdio()
+comment6.params=
+comment6.target=boolean\ getGano()
+comment7.params=
+comment7.target=int\ getMovimientosDisponibles()
+comment8.params=
+comment8.target=java.lang.String\ getStringDirecciones()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10
