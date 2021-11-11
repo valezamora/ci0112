@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Celda
+comment1.params=valor
+comment1.target=Celda(int)
+comment2.params=valor\ anterior
+comment2.target=Celda(int,\ Celda)
+comment3.params=valor\ anterior\ siguiente
+comment3.target=Celda(int,\ Celda,\ Celda)
+comment4.params=
+comment4.target=int\ getValor()
+comment5.params=
+comment5.target=Celda\ getAnterior()
+comment6.params=
+comment6.target=Celda\ getSiguiente()
+comment7.params=anterior
+comment7.target=void\ setAnterior(Celda)
+comment8.params=siguiente
+comment8.target=void\ setSiguiente(Celda)
+comment9.params=valor
+comment9.target=void\ setValor(int)
+numComments=10

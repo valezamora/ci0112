@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Lista
+comment1.params=
+comment1.target=Lista()
+comment2.params=valor
+comment2.target=void\ agregarElemento(int)
+comment2.text=\n\ Agrega\ una\ celda\ nueva\ al\ final\ de\ la\ lista\n
+comment3.params=posicion
+comment3.target=void\ eliminarElemento(int)
+comment3.text=\n\ Eliminar\ el\ elemento\ en\ la\ posicion\ dada\n\ @param\ posicion\ Posicion\ que\ se\ quiere\ eliminar\n
+comment4.params=valor
+comment4.target=int\ buscar(int)
+comment4.text=\n\ Busca\ un\ valor\ en\ la\ lista\ y\ devuelve\ su\ posicion.\ \n\ \n\ @return\ devuelve\ la\ posicion\ o\ -1\ si\ no\ encuentra\ el\ valor\n
+comment5.params=
+comment5.target=java.lang.String\ getStringInvertido()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
