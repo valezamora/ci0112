@@ -25,3 +25,25 @@ Clase 9: Ciclos y Switch - Aplicación calendario
 Clase 10: Recursividad y ciclos
 
 Clase 11: Recursividad y validación de entrada de datos
+
+Clase 12: Vectores y ejemplo App Tienda
+
+Classe 13: Collar de perlas y terminar App Tienda
+
+Classe 14: Juego 21
+
+Clase 15: Ejemplo clase Racional
+
+Clase 16: Aproximación de Pi
+
+Clase 17: Vectores
+
+Clase 18: Matrices
+
+Clase 19: Cuatro en línea
+
+Clase 20: Ejemplo imagen
+
+Clase 21: Práctica matrices - ejemplo juego Isla y Pirata
+
+Clase 22: Listas
