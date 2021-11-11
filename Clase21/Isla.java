@@ -9,6 +9,7 @@ public class Isla
     private boolean gano;
     private boolean tieneTesoro;
     private int cantidadDeMovimientosRealizados;
+    
     private final char AGUA = 'A';
     private final char PIRATA = 'P';
     private final char TESORO = 'T';
@@ -43,8 +44,8 @@ public class Isla
         tablero[tablero.length-1][0] = SALIDA;
         
         Random r = new Random();
-        int f = r.nextInt(filas - 2 - 1 + 1);
-        int c = r.nextInt(columnas - 2 - 1 + 1);
+        int f = r.nextInt(filas - 2 + 1);
+        int c = r.nextInt(columnas - 2 + 1);
         // poner tesoro
         tablero[f][c] = TESORO;
         this.posicionTesoro = new int[2];
