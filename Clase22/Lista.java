@@ -1,3 +1,6 @@
+/**
+ * Implementacion de lista doblemente enlazada
+ */
 public class Lista
 {
     private Celda inicio;
@@ -73,12 +76,65 @@ public class Lista
         }
         return posicion;
     }
-    
+
+    /**
+     * Busca el valor en la posicion dada y lo retorna
+     * @param posicion
+     * @return Valor en la posicion dada
+     */
+    public int getValor(int posicion) {
+        //implementar esto
+        return 0;
+    }
+
+    /**
+     * Devuelve el primer elemento de la lista
+     * @return
+     */
+    public int obtenerPrimero() {
+        //implementar esto
+        return 0;
+    }
+
+    /**
+     * Devuelve el ultimo elemento de la lista
+     * @return
+     */
+    public int obtenerUltimo() {
+        //implementar esto
+        return 0;
+    }
+
+    /**
+     * devuelve la cantidad de elementos de la lista
+     * @return
+     */
+    public int cantidadDeElementos() {
+        //implementar esto
+        return 0;
+    }
+
+    /**
+     * Borra todos los elementos de la lista, deja una lista vacia
+     */
+    public void clear() {
+        //implementar esto
+    }
+
+    /**
+     * Agregar elemento en la posicion dada
+     * @param valor
+     * @param posicion
+     */
+    public void agregarElemento(int valor, int posicion) {
+        //implementar esto
+    }
+
     public String getStringInvertido() {
         String s = "";
         Celda celdaActual = fin;
         while(celdaActual != null) {
-            s += celdaActual.getValor() + " -> ";
+            s += celdaActual.getValor() + " <- ";
             celdaActual = celdaActual.getAnterior();
         }
         return s;
