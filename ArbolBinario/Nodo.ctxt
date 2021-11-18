@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Nodo
+comment1.params=valor
+comment1.target=Nodo(int)
+comment2.params=
+comment2.target=int\ getValor()
+comment3.params=
+comment3.target=Nodo\ getHijoIzquierdo()
+comment4.params=
+comment4.target=Nodo\ getHijoDerecho()
+comment5.params=valor
+comment5.target=void\ setValor(int)
+comment6.params=hijoIzquierdo
+comment6.target=void\ setHijoIzquierdo(Nodo)
+comment7.params=hijoDerecho
+comment7.target=void\ setHijoDerecho(Nodo)
+comment8.params=valorAInsertar
+comment8.target=void\ insertar(int)
+numComments=9
