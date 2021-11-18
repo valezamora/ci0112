@@ -14,6 +14,23 @@ public class Main
         arbol.agregarElemento(14);
         arbol.agregarElemento(13);
         arbol.agregarElemento(9);
+        arbol.agregarElemento(0);
+        arbol.agregarElemento(2);
+
+        System.out.println("preorden: " + arbol.recorridoPreorden());
+        
+        System.out.println("inorden: " + arbol.recorridoInorden());
+        
+        System.out.println("posorden: " + arbol.recorridoPosorden());
+        
+        System.out.println("Esta el 13? " +  arbol.buscar(13));
+        
+        try {
+            arbol.eliminarElemento(8);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        
         System.out.println(arbol.recorridoPreorden());
     }
 }
