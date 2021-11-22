@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=BitFileReader
+comment1.params=name
+comment1.target=BitFileReader(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ BitStream\n
+comment2.params=
+comment2.target=void\ readHeader()
+comment2.text=\n\ \ \ Reads\ file\ Huffman\ compressed\ file\ header\n\ \ Checks\ if\ bytes\ are\ correct\ (magic\ number)\ and\ sets\ stuffBits\ variable\n
+comment3.params=
+comment3.target=void\ read()
+comment3.text=\n\ Read\ a\ binary\ coded\ file\ into\ a\ char\ (byte)\ array\n\ Convert\ every\ char\ to\ its\ binary\ representation\ and\ fill\ rString\n\ \n
+comment4.params=
+comment4.target=boolean\ hasNext()
+comment4.text=\n\ Return\ true\ if\ the\ stream\ has\ another\ element\n
+comment5.params=
+comment5.target=char\ next()
+comment5.text=\n\ Return\ next\ char\ from\ stream\n
+comment6.params=
+comment6.target=void\ close()
+comment6.text=\n\ Closes\ the\ stream\n
+numComments=7

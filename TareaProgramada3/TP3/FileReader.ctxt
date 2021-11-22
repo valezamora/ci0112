@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=FileReader
+comment1.params=nombreArchivo
+comment1.target=FileReader(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ FileReader\n
+comment2.params=
+comment2.target=java.lang.String\ leerArchivo()
+comment3.params=
+comment3.target=java.lang.String\ leerSiguienteCaracter()
+comment4.params=
+comment4.target=void\ close()
+numComments=5
