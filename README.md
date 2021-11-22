@@ -46,4 +46,8 @@ Clase 20: Ejemplo imagen
 
 Clase 21: Práctica matrices - ejemplo juego Isla y Pirata
 
-Clase 22: Listas
+Clase 22: Listas doblemente enlazadas
+
+Clase 23 y 24 - árbol Binario (folder de ArbolBinario)
+
+Tarea Programada 3 - Ejemplos para leer y escribir archivos
