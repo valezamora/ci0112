@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=FileWriter
+comment1.params=nombreArchivo
+comment1.target=FileWriter(java.lang.String)
+comment2.params=contenido
+comment2.target=void\ crearArchivo(java.lang.String)
+comment3.params=
+comment3.target=void\ close()
+numComments=4

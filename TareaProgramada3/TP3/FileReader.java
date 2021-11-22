@@ -1,6 +1,9 @@
 import java.io.File;
 import java.io.FileInputStream;
 
+/**
+ * 
+ */
 public class FileReader
 {
     private FileInputStream inputStream;
@@ -18,12 +21,19 @@ public class FileReader
         }
     }
     
+    /**
+     * Lee todo lo que queda del archivo y lo devuelve en un string
+     * (si usan binario o caracteres)
+     * 
+     * @return Representacion de caracteres del contenido del archivo
+     */
     public String leerArchivo() throws Exception {
         String contenido = "";
         int cont;
         while ((cont = inputStream.read()) != -1) {
            // Para convertir el entero que lee a binario
-           String binario = Integer.toBinaryString(cont);
+           // String binario = Integer.toBinaryString(cont);
+           
            // Para convertir el entero a caracter
            char c = (char)cont;
            contenido +=  c + "\n";

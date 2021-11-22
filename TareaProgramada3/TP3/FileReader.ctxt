@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=FileReader
+comment0.text=\n\ \n
 comment1.params=nombreArchivo
 comment1.target=FileReader(java.lang.String)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ FileReader\n
 comment2.params=
 comment2.target=java.lang.String\ leerArchivo()
+comment2.text=\n\ Lee\ todo\ lo\ que\ queda\ del\ archivo\ y\ lo\ devuelve\ en\ un\ string\n\ (si\ usan\ binario\ o\ caracteres)\n\ \n\ @return\ Representacion\ de\ caracteres\ del\ contenido\ del\ archivo\n
 comment3.params=
 comment3.target=java.lang.String\ leerSiguienteCaracter()
 comment4.params=

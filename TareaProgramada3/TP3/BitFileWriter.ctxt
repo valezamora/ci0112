@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=BitFileWriter
+comment1.params=name\ stuffBits
+comment1.target=BitFileWriter(java.lang.String,\ int)
+comment1.text=\n\ \ Constructor\ for\ objects\ of\ class\ BitStream\n\ \ This\ constructor\ must\ know\ the\ number\ of\ bits\ to\ be\ stuffed\ to\ the\ end\ of\ the\ file\n\n
+comment2.params=
+comment2.target=void\ writeHeader()
+comment2.text=\n\ \ First\ thing\ to\ write\ to\ stream\ is\ file\ header\n
+comment3.params=closing
+comment3.target=void\ writeInternalBuffer(boolean)
+comment3.text=\n\ Write\ internal\ buffer\ to\ stream\n\ @param\ closing\ boolean\ value,\ true\ if\ last\ block\ to\ be\ written,\ false\ if\ just\ writing\ to\ the\ file\n\n
+comment4.params=binCodedText
+comment4.target=void\ addToStream(java.lang.StringBuffer)
+comment4.text=\n\ Add\ a\ StringBuffer\ to\ this\ stream\n\ \ The\ StringBuffer\ must\ contain\ a\ codified\ binary\ value\n\ @param\tbinCodedText\ta\ binary\ coded\ string\n
+comment5.params=binaryCodedString
+comment5.target=void\ write(java.lang.String)
+comment5.text=\n\ Write\ a\ String\ to\ the\ stream/file\n\ \n\ @param\ \ s\ \ \ String\ to\ write\n
+comment6.params=letter
+comment6.target=void\ write(char)
+comment6.text=\n\ Write\ a\ character\ to\ the\ stream/file\n\ \n\ @param\ \ c\ \ \ character\ to\ write\n\n\ Letter\ A\ is\ coded\ by\ 0x65\ or\ "1000001"\ in\ binary,\ function\ Integer.toBinaryString\ only\ returns\ "1000001",\ seven\ bits,\ so\ we\ need\ to\ pad\ to\ 8\ bits\ per\ character,\n\ using\ for\ in\ this\ method\ we\ create\ "0",\ the\ append\ "10000001"\ to\ form\ "010000001"\ to\ write\n\n
+comment7.params=
+comment7.target=void\ close()
+comment7.text=\n\ Closes\ the\ stream\n\n
+numComments=8
