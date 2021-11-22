@@ -171,8 +171,8 @@ public class ArbolBinario
         if (nodo == null) {
             s += "";
         } else {
-            s += inorden(nodo.getHijoIzquierdo());
-            s += inorden(nodo.getHijoDerecho());
+            s += posorden(nodo.getHijoIzquierdo());
+            s += posorden(nodo.getHijoDerecho());
             s += " " + nodo.getValor() + " ";
         }
         return s;
