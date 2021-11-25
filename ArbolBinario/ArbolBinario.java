@@ -10,6 +10,49 @@ public class ArbolBinario
         this.raiz = new Nodo(valor);
     }
     
+    public ArbolBinario(Integer[] valores) {
+        for (int i = 0; i < valores.length; ++i) {
+            agregarElemento(valores[i]);
+        }
+    }
+    
+    public Nodo getRaiz() {
+        return this.raiz;
+    }
+    
+    /**
+     * Dos arboles son subarbol si son iguales, es igual al hijo izq, es igual al hijo derecho
+     */
+    public boolean esSubarbol(ArbolBinario otroArbol) {
+        // Buscar raiz de otroArbol en this arbol
+        Nodo nodoArbol = this.buscarNodo(otroArbol.getRaiz().getValor(), this.raiz);
+        
+        if (nodoArbol == null) {
+            return false;
+        }
+        // Si encuentro la raiz, los recorro y comparo que cada nodo sea igual y si todos son iguales es subarbol
+        return esSubarbolRec(nodoArbol, otroArbol.getRaiz(), false);
+    }
+    
+    public boolean esSubarbolRec(Nodo arbol, Nodo otroArbol, boolean esSubarbol){
+        if (arbol == null && otroArbol == null) {
+            esSubarbol = true;  
+        } else if (arbol != null && (arbol.getValor() == otroArbol.getValor() || otroArbol == null)) {
+            esSubarbol = true;
+            if (otroArbol != null) {
+                esSubarbol = esSubarbolRec(arbol.getHijoIzquierdo(), otroArbol.getHijoIzquierdo(), esSubarbol);
+                esSubarbol = esSubarbolRec(arbol.getHijoDerecho(), otroArbol.getHijoDerecho(), esSubarbol);
+            }
+        } else {
+            esSubarbol = false;
+        }
+        return esSubarbol;
+    }
+    
+    public boolean esIgual(ArbolBinario otroArbol) {
+        return esSubarbolRec(this.raiz, otroArbol.getRaiz(), false);
+    }
+    
     /**
      * Metodo para guardar un elemento en el arbol
      */
@@ -88,6 +131,27 @@ public class ArbolBinario
                 }
                 if (valor > nodo.getValor()) {
                     return buscarPadre(valor, nodo.getHijoDerecho());
+                }
+                return null;
+            }
+        }
+    }
+    
+    /**
+     * Devuelve el nodo que contiene el valor 
+     */
+    private Nodo buscarNodo(int valor, Nodo nodo) {
+        if (nodo == null) {
+            return null;
+        } else {
+            if (nodo.getValor() == valor) {
+                return nodo;
+            } else {
+                if (valor < nodo.getValor()) {
+                    return buscarNodo(valor, nodo.getHijoIzquierdo());
+                }
+                if (valor > nodo.getValor()) {
+                    return buscarNodo(valor, nodo.getHijoDerecho());
                 }
                 return null;
             }
@@ -176,5 +240,9 @@ public class ArbolBinario
             s += " " + nodo.getValor() + " ";
         }
         return s;
+    }
+    
+    public String toString() {
+        return recorridoPreorden();
     }
 }
