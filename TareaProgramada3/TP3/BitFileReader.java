@@ -154,7 +154,7 @@ class BitFileReader {
       c.append( code );
 
       if ( this.charsRead < ReadSize ) {   // End of file detected
-          for ( int x = 0; x < stuffBits; x++ ) {
+          for ( int x = 0; x < this.stuffBits; x++ ) {
               this.readString.append( c.charAt( x ) );
           }
       } else {
@@ -201,5 +201,27 @@ class BitFileReader {
         }
 
     }
+
+
+
+/**
+ * Main method to run tests for this class
+ */
+   public static final void main( String [] args ) {
+      int counter = 0;
+      BitFileReader bits = new BitFileReader( "test.huf" );
+
+      while ( bits.hasNext() ) {
+         counter++;
+         System.out.print( bits.next() );
+         if ( 0 == (counter % 8) ) {
+            System.out.println();
+         }
+      }
+
+      bits.close();
+
+   }
+
 }
 

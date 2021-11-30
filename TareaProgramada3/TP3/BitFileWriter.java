@@ -75,13 +75,22 @@ public class BitFileWriter {
  */
    private void writeHeader() {
       char valid[] = { 0x7f, 0x48, 0x55 };
+      char last;
+      String stuffValue;
       StringBuffer lastHeaderByte = new StringBuffer( "11110" );
 
       for ( char value:valid ) {	// Write first three characters: 0x1f, H, U
          this.write( value );
       }
-      lastHeaderByte.append( Integer.toString( this.stuffBits, 2 ) );
-      this.addToStream( lastHeaderByte );
+
+      stuffValue = Integer.toString( this.stuffBits, 2 );
+      for ( int l = stuffValue.length(); l < 3; l++ ) {	// To complete three bits
+         lastHeaderByte.append( '0' );
+      }
+      lastHeaderByte.append( stuffValue );
+      last = (char) (Integer.parseInt( lastHeaderByte.toString(), 2 ) & 0xff);
+      this.write( last );
+
    }
 
 
@@ -194,6 +203,17 @@ public class BitFileWriter {
 
     }
 
+
+    /**
+     * Main method to test this class
+     */
+    public static final void main( String [] args ) {
+
+       BitFileWriter bits = new BitFileWriter( "test.huf", 45 );
+       bits.write( "0000111101010101" );
+       bits.close();
+
+    }
 
 }
 
