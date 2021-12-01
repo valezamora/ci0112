@@ -5,7 +5,7 @@ public class Main
         
         // Para leer un archivo comprimido
           int counter = 0;
-          BitFileReader bitsReader = new BitFileReader( "test.huf" );
+          BitFileReader bitsReader = new BitFileReader( "test.ext.huf" );
 
           while ( bitsReader.hasNext() ) {
              counter++;
@@ -18,6 +18,7 @@ public class Main
           bitsReader.close();
           System.out.println("------------------------");
         // Para leer un archivo normal
+        /*
         FileReader archivo = new FileReader( "test.ext" );
         String s = "";
         try {
@@ -65,7 +66,7 @@ public class Main
         System.out.println("ERROR: " + e);
       }
        
-
+        */
     
       
 

@@ -39,17 +39,17 @@ import java.io.FileInputStream;
 
 class BitFileReader {
 // Class constants
-   private static final int BitsToEncode = 8;		// Each character is encoded using eight bits
-   private static final int ReadSize = 512;		// Each file read is limited to 512 bytes
+   private static final int BitsToEncode = 8;        // Each character is encoded using eight bits
+   private static final int ReadSize = 512;        // Each file read is limited to 512 bytes
    private static final int BytesInHeader = 4;
 
 // Class instance members
-   private InputStream inputStream;	// Input stream
-   private int readPointer;		// Buffer read pointer
-   private byte[] readBuffer;		// Read buffer
-   private StringBuffer readString;	// Read string
-   private int charsRead;		// Chars read from file
-   private int stuffBits;		// Bits added to end of file
+   private InputStream inputStream;    // Input stream
+   private int readPointer;        // Buffer read pointer
+   private byte[] readBuffer;        // Read buffer
+   private StringBuffer readString;    // Read string
+   private int charsRead;        // Chars read from file
+   private int stuffBits;        // Bits added to end of file
 
 
 /**
@@ -89,12 +89,12 @@ class BitFileReader {
          for ( bits = 0; bits < BitsToEncode; bits++ ) {
             code[ bytes ].append( this.next() );
          }
-         if ( bytes < BytesInHeader - 1 ) {	// Checks first three bytes for 0x7f, H, U
+         if ( bytes < BytesInHeader - 1 ) {    // Checks first three bytes for 0x7f, H, U
             if ( Integer.parseInt( code[ bytes ].toString(), 2 ) != valid [ bytes ] ) {
                headerOK = false;
             }
          } else {
-            if ( (Integer.parseInt( code[ bytes ].toString(), 2 ) & 0xF0 ) != valid[ bytes ] ) {	// Checks for first half of fourth byte: 0xF
+            if ( (Integer.parseInt( code[ bytes ].toString(), 2 ) & 0xF0 ) != valid[ bytes ] ) {    // Checks for first half of fourth byte: 0xF
                headerOK = false;
             }
          }
@@ -120,7 +120,7 @@ class BitFileReader {
 
       if ( 0 == this.readPointer ) {
          try {
-            this.charsRead = this.inputStream.read( readBuffer );	// Reads up ReadSize bytes (512) from stream
+            this.charsRead = this.inputStream.read( readBuffer );    // Reads up ReadSize bytes (512) from stream
          }
          catch (Exception e) {
             e.printStackTrace();
@@ -133,12 +133,12 @@ class BitFileReader {
       }
 
       // Skips last byte in this for, specially handled if EOF
-      for ( int i = 0; i < this.charsRead - 1; i++ ) {
+      for ( int i = 0; i < this.charsRead; i++ ) {
           // For negative numbers, the ones with first bit in 1
           // Create a bigger int (+256) and cut it back to 8 bits (& 0xFF)
           String code = Integer.toString( (readBuffer[ i ] + 256) & 0xFF, 2 );
           StringBuffer c = new StringBuffer( "" );
-          for ( int x = code.length(); x < BitsToEncode; x++ ) {	// Zero stuff code
+          for ( int x = code.length(); x < BitsToEncode; x++ ) {    // Zero stuff code
               c.append( "0" );
           }
           c.append( code );
