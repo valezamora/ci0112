@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Interfaz
+comment1.params=
+comment1.target=Interfaz()
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ init()
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=
+comment4.target=void\ mostrarVentana()
+comment5.params=panel
+comment5.target=void\ mostrarPanel(javax.swing.JPanel)
+comment6.params=panel
+comment6.target=void\ eliminarPanel(javax.swing.JPanel)
+comment7.params=texto\ textoBoton1\ textoBoton2
+comment7.target=javax.swing.JPanel\ crearBotones(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment8.params=e
+comment8.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment9.params=e
+comment9.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=11
